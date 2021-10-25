@@ -1,0 +1,146 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+<html lang="en">
+<head><!--Start header-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--for respensif-->
+  <meta name="description" content="Le Grand Jasmin, établissement d'enseignement privé allant de la maternelle au lycée a ouvert ses portes pour vous accueillir. Cette continuité de l'enfance à l'âge adulte est l'assurance d'une éducation cohérente et harmonieuse.">
+  <meta name="keywords" content="Le Grand Jasmin ,ecole privée, ecole , jasmin ,massar,college ,lycces,primaire ,madrassa ">
+  <meta name="author" content="Abdelhamid Touil">
+  <title>Demande de Document</title><!--Title-->
+  <link rel="shortcut icon" href="{{asset('assets/style/images/favicon.png')}}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('assets/style/css/bootstrap.min.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('assets/style/css/plugins.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('assets/style/revolution/css/settings.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('assets/style/revolution/css/layers.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('assets/style/revolution/css/navigation.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('assets/style/type/type.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('assets/style.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('assets/style/css/color/purple.css')}}">
+ 
+</head><!--End header-->
+<body><!--start body-->
+ {{include('includes/header.html.twig')}}
+ {{include('includes/rightbar.html.twig')}}<!--right bar-->
+    <!-- Start Wrapper -->
+    <div class="wrapper image-wrapper bg-image page-title-wrapper inverse-text" data-image-src="{{ asset('assets/style/images/art/SC-812806_L.jpg')}}">
+       <!--start container-->
+      <div class="container inner text-center">
+        <div class="space90"></div><!--Space-->
+        <h1 class="page-title">Demande de document</h1>
+        <p class="lead">Ecrivé un message a votre prof</p>
+      </div>
+      <!--End container-->
+     </div>
+      <!-- /End wrapper-->
+      
+    <!-- Start wrapper -->
+    <div  class="wrapper ">
+      <!-- start Container inner-->
+        <div  class="container inner">
+          <!-- start Row-->
+            <div class="row">
+              <!-- start column-->
+                <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                  <h2 class="section-title text-center">Écrivez-nous</h2>
+                  <div class="space30"></div><!--Space-->
+
+       <!--**************************************** Form ******************************************-->
+
+                  <!-- start form -->
+                  <form  id="" method="post" action="{{path('Demande-de-document_create')}}">
+                    <!-- start Controls-->
+                    <div class="controls">
+                      <!-- start form-row-->
+                      <div class="form-row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input style="" id="form_name" type="text" name="code_massar" class="form-control" placeholder="Code Massar *" required="required" data-error="Code Massar  is required.">
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input id="form_lastname" type="text" name="nom" class="form-control" placeholder="Nom *" required="required" data-error="Nom is required.">
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End form-row-->
+                      <!-- start form-row-->
+                      <div class="form-row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input id="nom" type="text" name="prenom" class="form-control" placeholder="Prenom *" required="required" data-error="Prenom is required.">
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+                    
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input id="form_phone" type="text" name="niveau_scolaire" class="form-control" placeholder="Niveau Scolaire">
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End form-row-->
+                      <!-- Start form-row-->
+                      <div class="form-row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <textarea id="form_message" name="message" class="form-control" placeholder="Message*" rows="4" required="required" data-error="Message is required."></textarea>
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-12">
+                          <input type="submit" class="btn btn-send" value="Send message">
+                        </div>
+                      </div>
+                      <!-- /End form-row-->
+                      <!-- Start form-row-->
+                      <div class="form-row">
+                        <div class="col-md-12">
+                          <p class="" style="color: rgb(15, 15, 15);"><strong style="color: red;">*</strong> Ces champs sont obligatoires.</p>
+                        </div>
+                      </div>
+                      <!-- End form-row-->
+                    </div>
+                    <!-- /End Controls-->
+                  </form>
+                  <!-- /End form -->
+       <!--**************************************** End Form ******************************************-->
+                </div>
+                <!-- /End column -->
+              </div>
+          <!-- /End row -->
+        </div>
+        <!-- /End container -->
+   </div>
+      <!-- /.wrapper -->
+
+     {{include('includes/footer.html.twig')}}
+<script src="{{ asset('assets/style/js/jquery.min.js')}}"></script>
+<script src="{{ asset('assets/style/js/popper.min.js')}}"></script>
+<script src="{{ asset('assets/style/js/bootstrap.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/jquery.themepunch.tools.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/jquery.themepunch.revolution.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/extensions/revolution.extension.actions.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/extensions/revolution.extension.carousel.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/extensions/revolution.extension.kenburn.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/extensions/revolution.extension.layeranimation.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/extensions/revolution.extension.migration.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/extensions/revolution.extension.navigation.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/extensions/revolution.extension.parallax.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/extensions/revolution.extension.slideanims.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/extensions/revolution.extension.video.min.js')}}"></script>
+<script src="{{ asset('assets/style/js/plugins.js')}}"></script>
+<script src="{{ asset('assets/style/js/scripts.js')}}"></script>
+</body><!--End body-->
+</html><!--End html-->
+{% endblock %}

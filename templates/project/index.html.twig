@@ -1,0 +1,217 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Le Grand Jasmin, établissement d'enseignement privé allant de la maternelle au lycée a ouvert ses portes pour vous accueillir. Cette continuité de l'enfance à l'âge adulte est l'assurance d'une éducation cohérente et harmonieuse.">
+  <meta name="keywords" content="Le Grand Jasmin ,ecole privée, ecole , jasmin ,massar,college ,lycces,primaire ,madrassa ">
+  <meta name="author" content="Abdelhamid Touil">
+  <title>Projet</title>
+  <link rel="shortcut icon" href="{{asset('assets/style/images/favicon.png')}}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('assets/style/css/bootstrap.min.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('assets/style/css/plugins.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('assets/style/revolution/css/settings.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('assets/style/revolution/css/layers.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('assets/style/revolution/css/navigation.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('assets/style/type/type.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('assets/style.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('assets/style/css/color/purple.css')}}">
+ 
+</head><!--End header-->
+<body><!--start body-->
+ {{include('includes/header.html.twig')}}
+ {{include('includes/rightbar.html.twig')}}<!--right bar-->
+    <div class="wrapper image-wrapper bg-image page-title-wrapper inverse-text" data-image-src="{{asset('assets/style/images/art/bg2.jpg')}}">
+      <div class="container inner text-center">
+        <div class="space90"></div>
+        <h1 class="page-title" >Project <span style="color:#7dc2fa;">Le Grand Jasmin</span> </h1>
+        <p class="lead">Cette project et crée par notre éleves</p>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.wrapper -->
+    <div class="wrapper light-wrapper">
+      <div class="container inner">
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1">
+            <h2>A propos  cet projects</h2>
+            <div class="row no-gutters">
+              <div class="col-md-9 text-justify">
+                <p class="lead">cet projets et bien organisé par notre éleve , note école est crée des projeét chaque semaine</p>
+              </div>
+
+            </div>
+            <!--/.row -->
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+        <div class="space50"></div>
+        <div class="grid grid-view">
+          <div class="tiles tiles-m light-gallery-wrapper">
+            <div class="row isotope">
+              <div class="item grid-sizer col-md-6 corporate application" data-aos="fade-up">
+                <figure class="overlay overlay2 rounded"><a href="{{asset('assets/style/images/art/pro1.jpg')}}" class="lightbox"> <img src="{{asset('assets/style/images/art/pro1.jpg')}}" alt="" /></a></figure>
+              </div>
+              <!-- /.item -->
+              <div class="item grid-sizer col-md-6 corporate application" data-aos="fade-up">
+                <figure class="overlay overlay2 rounded"><a href="{{asset('assets/style/images/art/pro2.jpg')}}" class="lightbox"> <img src="{{asset('assets/style/images/art/pro2.jpg')}}" alt="" /></a></figure>
+              </div>
+              <!-- /.item -->
+              <div class="item grid-sizer col-md-6 corporate application" data-aos="fade-up">
+                <figure class="overlay overlay2 rounded"><a href="{{asset('assets/style/images/art/pro3.jpg')}}" class="lightbox"> <img src="{{asset('assets/style/images/art/pro3.jpg')}}" alt="" /></a></figure>
+              </div>
+              <!-- /.item -->
+              <div class="item grid-sizer col-md-6 corporate application" data-aos="fade-up">
+                <figure class="overlay overlay2 rounded"><a href="{{asset('assets/style/images/art/b1.jpg')}}" class="lightbox"> <img src="{{asset('assets/style/images/art/b1.jpg')}}" alt="" /></a></figure>
+              </div>
+              <!-- /.item -->
+              <div class="item grid-sizer col-md-6 corporate application" data-aos="fade-up">
+                <figure class="overlay overlay2 rounded"><a href="{{asset('assets/style/images/art/b2.jpg')}}" class="lightbox"> <img src="{{asset('assets/style/images/art/b2.jpg')}}" alt="" /></a></figure>
+              </div>
+              <!-- /.item -->
+              <div class="item grid-sizer col-md-6 corporate application" data-aos="fade-up">
+                <figure class="overlay overlay2 rounded"><a href="{{asset('assets/style/images/art/b3.jpg')}}" class="lightbox"> <img src="{{asset('assets/style/images/art/b3.jpg')}}" alt="" /></a></figure>
+              </div>
+              <!-- /.item -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.tiles -->
+        </div>
+        <!-- /.grid -->
+        <div class="space50"></div>
+        <div class="text-center"><a href="#" class="btn">See Project</a></div>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.wrapper -->
+    <div class="wrapper gray-wrapper">
+      <div class="container inner">
+        <h2 class="section-title text-center">Autre Projets</h2>
+        <div class="grid-view boxed light-gallery-wrapper text-center">
+          <div class="carousel owl-carousel gap-small" data-margin="0" data-dots="true" data-autoplay="false" data-autoplay-timeout="5000" data-responsive='{"0":{"items": "1"}, "768":{"items": "2"}, "992":{"items": "3"}}'>
+            <div class="item">
+              <div class="item-inner">
+                <div class="box bg-white shadow p-30">
+                  <figure class="main overlay overlay2 rounded mb-30"><a href="{{asset('assets/style/images/art/pro4.jpg')}}" class="lightbox"> <img src="{{asset('assets/style/images/art/pro4.jpg')}}" alt="" /></a></figure>
+                  <div class="post-content">
+                    <h2 class="post-title mb-10"><a href="">Fringilla Nullam</a></h2>
+                    <div class="meta mb-0">Corporate, Application</div>
+                  </div>
+                  <!-- /.post-content -->
+                </div>
+                <!--/.item-inner -->
+              </div>
+              <!-- /.box -->
+            </div>
+            <!-- /.item -->
+            <div class="item">
+              <div class="item-inner">
+                <div class="box bg-white shadow p-30">
+                  <figure class="main overlay overlay2 rounded mb-30"><a href="{{asset('assets/style/images/art/pro5.jpg')}}" class="lightbox"> <img src="{{asset('assets/style/images/art/pro5.jpg')}}" alt="" /></a></figure>
+                  <div class="post-content">
+                    <h2 class="post-title mb-10"><a href="">Ridiculus Parturient</a></h2>
+                    <div class="meta mb-0">Application</div>
+                  </div>
+                  <!-- /.post-content -->
+                </div>
+                <!--/.item-inner -->
+              </div>
+              <!-- /.box -->
+            </div>
+            <!-- /.item -->
+            <div class="item">
+              <div class="item-inner">
+                <div class="box bg-white shadow p-30">
+                  <figure class="main overlay overlay2 rounded mb-30"><a href="{{asset('assets/style/images/art/pro6.jpg')}}" class="lightbox"> <img src="{{asset('assets/style/images/art/pro6.jpg')}}" alt="" /></a></figure>
+                  <div class="post-content">
+                    <h2 class="post-title mb-10"><a href="">Ornare Ipsum</a></h2>
+                    <div class="meta mb-0">Corporate, Branding</div>
+                  </div>
+                  <!-- /.post-content -->
+                </div>
+                <!--/.item-inner -->
+              </div>
+              <!-- /.box -->
+            </div>
+            <!-- /.item -->
+            <div class="item">
+              <div class="item-inner">
+                <div class="box bg-white shadow p-30">
+                  <figure class="main overlay overlay2 rounded mb-30"><a href="{{asset('assets/style/images/art/p4-full.jpg')}}" class="lightbox"> <img src="{{asset('assets/style/images/art/p4.jpg')}}" alt="" /></a></figure>
+                  <div class="post-content">
+                    <h2 class="post-title mb-10"><a href="">Nullam Mollis</a></h2>
+                    <div class="meta mb-0">Application</div>
+                  </div>
+                  <!-- /.post-content -->
+                </div>
+                <!--/.item-inner -->
+              </div>
+              <!-- /.box -->
+            </div>
+            <!-- /.item -->
+            <div class="item">
+              <div class="item-inner">
+                <div class="box bg-white shadow p-30">
+                  <figure class="main overlay overlay2 rounded mb-30"><a href="https://vimeo.com/90355541" class="lightbox"> <img src="{{asset('assets/style/images/art/p5.jpg')}}" alt="" /></a></figure>
+                  <div class="post-content">
+                    <h2 class="post-title mb-10"><a href="">Euismod Risus</a></h2>
+                    <div class="meta mb-0">Video, Application</div>
+                  </div>
+                  <!-- /.post-content -->
+                </div>
+                <!--/.item-inner -->
+              </div>
+              <!-- /.box -->
+            </div>
+            <!-- /.item -->
+            <div class="item">
+              <div class="item-inner">
+                <div class="box bg-white shadow p-30">
+                  <figure class="main overlay overlay2 rounded mb-30"><a href="{{asset('assets/style/images/art/p6-full.jpg')}}" class="lightbox"> <img src="{{asset('assets/style/images/art/p6.jpg')}}" alt="" /></a></figure>
+                  <div class="post-content">
+                    <h2 class="post-title mb-10"><a href="">Ridiculus Tristique</a></h2>
+                    <div class="meta mb-0">Branding</div>
+                  </div>
+                  <!-- /.post-content -->
+                </div>
+                <!--/.item-inner -->
+              </div>
+              <!-- /.box -->
+            </div>
+            <!-- /.item -->
+          </div>
+          <!-- /.owl-carousel -->
+        </div>
+        <!-- /.grid-view -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.wrapper -->
+   
+     {{include('includes/footer.html.twig')}}
+<script src="{{ asset('assets/style/js/jquery.min.js')}}"></script>
+<script src="{{ asset('assets/style/js/popper.min.js')}}"></script>
+<script src="{{ asset('assets/style/js/bootstrap.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/jquery.themepunch.tools.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/jquery.themepunch.revolution.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/extensions/revolution.extension.actions.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/extensions/revolution.extension.carousel.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/extensions/revolution.extension.kenburn.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/extensions/revolution.extension.layeranimation.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/extensions/revolution.extension.migration.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/extensions/revolution.extension.navigation.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/extensions/revolution.extension.parallax.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/extensions/revolution.extension.slideanims.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/extensions/revolution.extension.video.min.js')}}"></script>
+<script src="{{ asset('assets/style/js/plugins.js')}}"></script>
+<script src="{{ asset('assets/style/js/scripts.js')}}"></script>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,101 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Le Grand Jasmin, établissement d'enseignement privé allant de la maternelle au lycée a ouvert ses portes pour vous accueillir. Cette continuité de l'enfance à l'âge adulte est l'assurance d'une éducation cohérente et harmonieuse.">
+  <meta name="keywords" content="college ,Le Grand Jasmin ,ecole privée, ecole , jasmin ,massar,lycces,primaire ,madrassa ">
+  <meta name="author" content="Abdelhamid Touil">
+  <title>Collége</title>
+  <!-- css -->
+   <link rel="shortcut icon" href="{{asset('assets/style/images/favicon.png')}}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('assets/style/css/bootstrap.min.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('assets/style/css/plugins.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('assets/style/revolution/css/settings.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('assets/style/revolution/css/layers.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('assets/style/revolution/css/navigation.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('assets/style/type/type.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('assets/style.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('assets/style/css/color/purple.css')}}">
+</head>
+<body>
+{{include('includes/header.html.twig')}}<!-- header -->
+
+{{include('includes/rightbar.html.twig')}}<!-- right bar -->
+    <!-- /.offcanvas-info -->
+    <div class="wrapper image-wrapper bg-image page-title-wrapper inverse-text" data-image-src="{{asset('assets/style/images/art/ecolebg1.png')}}">
+      <div class="container inner text-center">
+        <div class="space90"></div>
+        <h1 class="page-title mb-25">Collége</h1>
+        <ul class="breadcrumbs">
+          <li><a href="Primaire">Primaire</a></li>
+          <li><a href="Contact">Contact</a></li>
+          <li> <a href="Accueil">Accueil</a> </li>
+        </ul>
+      </div>
+      <!-- /.container -->
+    </div>
+
+    <!-- /.wrapper -->
+    <div class="wrapper light-wrapper">
+      <div class="container inner">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <figure><img src="#" srcset="{{asset('assets/style/images/concept/c1.jpg')}} 1x, style/images/concept/concept10@2x.png 2x" alt="" /></figure>
+          </div>
+          <!--/column -->
+          <div class="space20 d-md-none"></div>
+          <div class="space50 d-none d-md-block d-lg-none"></div>
+          <div class="col-lg-6 pl-60 pl-md-15">
+            <h2 class="display-2">Collége</h2>
+            <div class="space20"></div>
+          <p>Dans le cadre de la continuité de la reconversion de la maternelle et du primaire, notre nouvelle stratégie a trouvé pleinement son sens puisqu'elle a coïncidé avec l'introduction par le Ministère de l’Education Nationale du cycle international au collège. Cette initiative, que nous saluons au passage, ne pourrait réellement donner ses fruits que si elle est accompagnée, en amont, d'un renforcement d'enseignement de la langue française</p>
+        <p>En assurant à nos élèves une assise linguistique solide, on leur permettra certainement une meilleure formation et assimilation de la connaissance et du savoir-faire.</p>
+        <p>Nourrie et soutenue par l'encadrement d'enseignants ouverts aux principes de la liberté d’expression, de l'esprit critique et l'ouverture sur d'autres cultures, cette orientation ne peut que favoriser le respect de certaines valeurs telles que l'équité, la tolérance, la loyauté et la citoyenneté.
+        </p>
+            <div class="space10"></div>
+            <a href="#" class="btn btn-purple">More Details</a>
+          </div>
+          <!--/column -->
+        </div>
+
+
+        <!--/.row -->
+        <div class="space120"></div>
+  
+        
+        <!--/.row -->
+        <div class="space120"></div>
+
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.wrapper -->
+ 
+    {{include('includes/footer.html.twig')}}
+    <!-- script -->
+<script src="{{ asset('assets/style/js/jquery.min.js')}}"></script>
+<script src="{{ asset('assets/style/js/popper.min.js')}}"></script>
+<script src="{{ asset('assets/style/js/bootstrap.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/jquery.themepunch.tools.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/jquery.themepunch.revolution.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/extensions/revolution.extension.actions.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/extensions/revolution.extension.carousel.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/extensions/revolution.extension.kenburn.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/extensions/revolution.extension.layeranimation.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/extensions/revolution.extension.migration.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/extensions/revolution.extension.navigation.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/extensions/revolution.extension.parallax.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/extensions/revolution.extension.slideanims.min.js')}}"></script>
+<script src="{{ asset('assets/style/revolution/js/extensions/revolution.extension.video.min.js')}}"></script>
+<script src="{{ asset('assets/style/js/plugins.js')}}"></script>
+<script src="{{ asset('assets/style/js/scripts.js')}}"></script>
+</body>
+</html>
+{% endblock %}

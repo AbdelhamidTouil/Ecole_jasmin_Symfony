@@ -1,0 +1,39 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+#------------------------------------------------------------------------------
+
+
+RewriteRule  ^A-propos about.php [L]
+RewriteRule  ^Contact contact.php [NC,L]
+RewriteRule  ^Videos videos.php [NC,L]
+RewriteRule  ^Accueil index.php [NC,L]
+RewriteRule  ^Projet projet.php [NC,L]
+RewriteRule  ^Vacancess-scollaire  vacancesscolaires.php [NC,L]
+RewriteRule  ^Primaire primaire.php [NC,L]
+RewriteRule  ^College college.php [NC,L]
+RewriteRule  ^Lyccee lyccee.php [NC,L]
+RewriteRule  ^Envoie-de-document envoiedocument.php [NC,L]
+RewriteRule  ^Demande-de-document demandedocument.php [NC,L]
+RewriteRule  ^Date-controle datecontrole.php [NC,L]
+RewriteRule  ^Reglement-Interieur reglementinterieur.php [NC,L]
+
+
+
+
+# CONTACT
+
+#RewriteRule ^mentions-legales mentions-legales.php [NC,L]
+#RewriteRule ^lien-utiles/([a-zA-Z0-9\-éçèà]+)/([a-zA-Z0-9\-éçèà]+) reference.php?key=$1&place=$2 [NC,L]
+
+#Not found
+#ErrorDocument 404 http://localhost/Le-Grande-Jasmin/page-not-found
+
+
+#RewriteCond %{HTTPS} !=on
+#RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+ 
+
+
+</IfModule>
+#------------------------------------------------------------------------------
